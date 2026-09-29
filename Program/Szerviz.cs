@@ -30,6 +30,11 @@ namespace Program
                 {
                     jarmu.Szervizel(dij);
                 }
+
+                else
+                {
+                    Console.WriteLine($"A {jarmu.Rendszam} nem szorul szervizre");
+                }
             }
         }
     }

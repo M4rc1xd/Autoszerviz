@@ -40,7 +40,7 @@ namespace Program
 
         public override void Szervizel(int dij)
         {
-            Szervizel(dij);
+            base.Szervizel(dij);
         }
     }
 }

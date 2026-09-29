@@ -45,7 +45,7 @@ namespace Program
             {
                 KilometerOra -= 10000;
             }
-            AkkumulatorSzint -= 20;
+            AkkumulatorSzint += 20;
         }
     }
 }
