@@ -89,12 +89,12 @@ namespace Program
             set { if(kilometerOra > 10000) { szervizSzukseges = true; } else { szervizSzukseges = false; } }
         }
 
-        public void InformaciotAd()
+        public virtual void InformaciotAd()
         {
             Console.WriteLine($"{rendszam} - {kor} éves jármű, {kilometerOra} kilométerrel");
         }
 
-        public void Szervizel(int dij)
+        public virtual void Szervizel(int dij)
         {
             if (dij > 100000)
             {
