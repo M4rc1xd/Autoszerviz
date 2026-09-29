@@ -83,9 +83,9 @@ namespace Program
             }
         }
 
-        private string InformaciotAd()
+        public void InformaciotAd()
         {
-            return $"{rendszam} - {kor} éves jármű, {kilometerOra} kilométerrel";
+            Console.WriteLine($"{rendszam} - {kor} éves jármű, {kilometerOra} kilométerrel");
         }
 
         private void Szervizel(int dij)
