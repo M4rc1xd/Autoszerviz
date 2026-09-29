@@ -83,12 +83,18 @@ namespace Program
             }
         }
 
+        public bool SzervizSzukseges
+        {
+            get { return szervizSzukseges; }
+            set { if(kilometerOra > 10000) { szervizSzukseges = true; } else { szervizSzukseges = false; } }
+        }
+
         public void InformaciotAd()
         {
             Console.WriteLine($"{rendszam} - {kor} éves jármű, {kilometerOra} kilométerrel");
         }
 
-        private void Szervizel(int dij)
+        public void Szervizel(int dij)
         {
             if (dij > 100000)
             {
