@@ -25,7 +25,8 @@ namespace Program
         public string Rendszam
         {
             get => rendszam;
-            set { 
+            set
+            {
                 if (string.IsNullOrWhiteSpace(value))
                 {
                     Console.WriteLine("A rendszám nem lehet üres!");
@@ -40,7 +41,9 @@ namespace Program
         public int Kor
         {
             get { return kor; }
-            set { if (value < 0)
+            set
+            {
+                if (value < 0)
                 {
                     kor = 0;
                 }
@@ -57,7 +60,9 @@ namespace Program
         public int KilometerOra
         {
             get { return kilometerOra; }
-            set { if (value < 0)
+            set
+            {
+                if (value < 0)
                 {
                     kilometerOra = 0;
                 }
@@ -70,7 +75,9 @@ namespace Program
         public int UzemanyagSzint
         {
             get { return uzemanyagSzint; }
-            set { if (value < 0)
+            set
+            {
+                if (value < 0)
                 {
                     uzemanyagSzint = 0;
                 }
@@ -88,7 +95,7 @@ namespace Program
         public bool SzervizSzukseges
         {
             get { return szervizSzukseges; }
-            set { if(kilometerOra > 10000) { szervizSzukseges = true; } else { szervizSzukseges = false; } }
+            set { if (kilometerOra > 10000) { szervizSzukseges = true; } else { szervizSzukseges = false; } }
         }
 
         public virtual void InformaciotAd()
