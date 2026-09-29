@@ -25,7 +25,7 @@ namespace Program
         public string Rendszam
         {
             get { return rendszam; }
-            set { if (string.IsNullOrEmpty(value))
+            set { if (string.IsNullOrWhiteSpace(value))
                 {
                     rendszam = "ISMERETLEN";
                 }
