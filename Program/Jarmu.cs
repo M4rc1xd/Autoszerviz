@@ -16,16 +16,17 @@ namespace Program
 
         public Jarmu(string rendszam, int kor, int kilometerOra, int uzemanyagSzint)
         {
-            this.rendszam = rendszam;
-            this.kor = kor;
-            this.kilometerOra = kilometerOra;
-            this.uzemanyagSzint = uzemanyagSzint;
+            this.Rendszam = rendszam;
+            this.Kor = kor;
+            this.KilometerOra = kilometerOra;
+            this.UzemanyagSzint = uzemanyagSzint;
         }
 
         public string Rendszam
         {
             get => rendszam;
-            set { if (string.IsNullOrEmpty(value))
+            set { 
+                if (string.IsNullOrWhiteSpace(value))
                 {
                     Console.WriteLine("A rendszám nem lehet üres!");
                     rendszam = "ISMERETLEN";
