@@ -8,13 +8,13 @@ namespace Program
     {
         List<Jarmu> jarmuvek;
 
-        private void jarmuFelvetele(Jarmu jarmu)
+        public void JarmuFelvetele(Jarmu jarmu)
         {
             jarmuvek.Add(jarmu);
             Console.WriteLine($"A jarmu megerkezett a szervizbe");
         }
 
-        private void informaciokListazasa()
+        public void InformaciokListazasa()
         {
             foreach (var jarmu in jarmuvek)
             {
@@ -22,7 +22,7 @@ namespace Program
             }
         }
 
-        private void csoportosSzerviz(int dij)
+        public void CsoportosSzerviz(int dij)
         {
             foreach (var jarmu in jarmuvek)
             {
