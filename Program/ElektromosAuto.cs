@@ -5,7 +5,7 @@ using System.Text;
 namespace Program
 { 
 
-    abstract public class ElektromosAuto : Jarmu
+    public class ElektromosAuto : Jarmu
     {
         private int akkumulatorSzint;
 
