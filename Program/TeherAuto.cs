@@ -40,10 +40,8 @@ namespace Program
 
         public override void Szervizel(int dij)
         {
-            var voltRakomany = Rakomany;
             Rakomany = 0;
             base.Szervizel(dij);
-            Rakomany = voltRakomany;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Program
         private int kor;
         private int kilometerOra;
         private int uzemanyagSzint;
-        private bool szervizSzukseges;
+        private bool szervizSzukseges = false;
 
 
         public Jarmu(string rendszam, int kor, int kilometerOra, int uzemanyagSzint)
@@ -20,6 +20,7 @@ namespace Program
             this.Kor = kor;
             this.KilometerOra = kilometerOra;
             this.UzemanyagSzint = uzemanyagSzint;
+            this.SzervizSzukseges = szervizSzukseges;
         }
 
         public string Rendszam
@@ -95,7 +96,7 @@ namespace Program
         public bool SzervizSzukseges
         {
             get { return szervizSzukseges; }
-            set { if (kilometerOra > 10000) { szervizSzukseges = true; } else { szervizSzukseges = false; } }
+            set { if (kilometerOra > 199999) { szervizSzukseges = true; } else { szervizSzukseges = false; } }
         }
 
         public virtual void InformaciotAd()
