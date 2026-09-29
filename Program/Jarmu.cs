@@ -25,7 +25,7 @@ namespace Program
         public string Rendszam
         {
             get { return rendszam; }
-            set { if (string.IsNullOrEmpty(value))
+            set { if (string.IsNullOrEmpty(rendszam))
                 {
                     rendszam = "ISMERETLEN";
                 }
@@ -38,17 +38,17 @@ namespace Program
         public int Kor
         {
             get { return kor; }
-            set { if (value < 0)
+            set { if (kor < 0)
                 {
                     kor = 0;
                 }
-                else if (value > 50)
+                else if (kor > 50)
                 {
                     kor = 50;
                 }
                 else
                 {
-                    kor = value;
+                    Kor = kor;
                 }
             }
         }
