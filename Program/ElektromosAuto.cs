@@ -11,7 +11,7 @@ namespace Program
 
         public ElektromosAuto(string rendszam, int kor, int kilometerOra, int akkumulatorSzint) : base(rendszam, kor, kilometerOra, 0)
         {
-            this.akkumulatorSzint = akkumulatorSzint;
+            this.AkkumulatorSzint = akkumulatorSzint;
         }
 
         public int AkkumulatorSzint
