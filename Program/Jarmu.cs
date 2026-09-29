@@ -24,9 +24,10 @@ namespace Program
 
         public string Rendszam
         {
-            get { return rendszam; }
-            set { if (string.IsNullOrEmpty(value) || value.Length < 0)
+            get => rendszam;
+            set { if (string.IsNullOrEmpty(value))
                 {
+                    Console.WriteLine("A rendszám nem lehet üres!");
                     rendszam = "ISMERETLEN";
                 }
                 else
