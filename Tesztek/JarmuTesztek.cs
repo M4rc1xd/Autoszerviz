@@ -199,5 +199,36 @@ namespace Tesztek
             Assert.That(auto.KilometerOra, Is.EqualTo(190000));
             Assert.That(auto.AkkumulatorSzint, Is.EqualTo(70));
         }
+
+
+        // uj kismotoros temas dolog
+        [Test]
+        public void Kismotor_Szam_KezdetiErtekHelyes()
+        {
+            Kismotor auto = new Kismotor("km-123", 8, 150000, 60, 25);
+
+            Assert.That(auto.Szam, Is.EqualTo(20));
+        }
+
+        [Test]
+        public void Kismotor_Rakomany_KezdetiErtekHelyes2()
+        {
+            Kismotor auto = new Kismotor("KM-456", 8, 150000, 60, 150);
+
+            Assert.That(auto.Szam, Is.EqualTo(20));
+        }
+
+        [Test]
+        public void Kismotor_szamValtoztataSzervizdijon()
+        {
+            // private int elsoKm = 99999;
+            
+            Kismotor auto = new Kismotor("TR-123", 8, 100000, 60, 20000);
+
+            auto.Szervizel(99999);
+
+            Assert.That(auto.KilometerOra, Is.EqualTo(90000));
+            
+        }
     }
 }
